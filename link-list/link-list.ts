@@ -12,7 +12,7 @@ class NodeListt<T> {
 class LinkList<T> {
     head: NodeListt<T> | null = null
 
-    add(val:T) {
+    addLast(val:T) {
         const newNode = new NodeListt(val);
         // the first itema
         if(this.head == null) {
@@ -30,8 +30,21 @@ class LinkList<T> {
         }
 
     }
+    // the first node was now it come in next new node
+    addFirst(val:T) {
+
+        const newNode = new NodeListt(val)
+        if(this.head == null) {
+            this.head = newNode
+        }else {
+            let current = this.head
+            while(current.next == null) {
+                
+            }
+        }
+    }
 }
 // const l1 = new LinkList<number>()
-// l1.add(50)
-// l1.add(51)
-// l1.add(52)
+// l1.addLast(50)
+// l1.addLast(51)
+// l1.addLast(52)
