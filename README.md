@@ -2,7 +2,10 @@
 In mathematics and computer science, an algorithm is a finite sequence of mathematically rigorous instructions,Algorithm is a step-by-step for solving a problem.
 Algorithms are used as specifications for performing calculations and data processing.
 # DataStructure
-is a way of organized and processing and storing retrieving the data.
+A data structure is a specialized way of organizing, managing, and storing data in a computer so that it can be accessed and modified efficiently.
+1) Efficiency: They help in optimizing operations like searching, insertion, deletion, sorting, etc., depending on the structure used.
+2) Data Management: They provide a way to manage large amounts of data efficiently, such as databases, file systems, and more.
+3) Algorithm Efficiency: Algorithms often rely on data structures to operate efficiently. For example, graph traversal algorithms require a graph data structure to represent relationships between objects.
 ## two broad categories:
 ### Linear Data Structure :
 Date elements are arranged sequentially or lineart that which element is attached to its previous and next adjacent elements Examples are array, stack, queue, etc.
@@ -46,3 +49,5 @@ just you can (you can only add/remove from one end);
 4) Undo Mechanism: Many applications (like text editors) use stacks to implement undo features.
 5) Build compilers(syntax checking)
 
+# ARRAY 
+array is liner datastructer that can hold elements and arrange them and it uses  contiguous<> memory space to store elements and 
