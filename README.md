@@ -50,4 +50,10 @@ just you can (you can only add/remove from one end);
 5) Build compilers(syntax checking)
 
 # ARRAY 
-array is liner datastructer that can hold elements and arrange them and it uses  contiguous<> memory space to store elements and 
+array is liner datastructer that can hold elements and arrange them and it uses  contiguous<contious> memory space to store elements and 
+in array we can directly access any element 
+
+# HASH-TABLE<HASH_MAP>
+hash tables are specialized data structure that alows fast access to data based on a key
+it works by using a hash function to compute an index(called hash code) in to an array that where the desired value can be store or found.
+hash tables are very fast
