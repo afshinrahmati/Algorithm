@@ -1,3 +1,16 @@
+# What is Big O :
+Big o notation is mathmatical notation that describe the limiting behavior a function when the argument tends towards a particular value or infinity.
+Big O روشی برای سنجش کارایی انجام یک الگوریتم است. هر چه Big O بیشتر باشد، کارایی الگوریتم مورد نظر، کمتر است.
+that is a idea for write Scable code
+1) o(1) ==>Constant the performance console.log(1).
+2) Log O(n) ==> Logarithmic  half the date.
+3) o(n) ==> Linear for(loop). change with the 
+4) o(n^2) ==>Quadratic nest for.
+5) o(2^n )==>Exponential the recursive Fibonacci algorithm.
+![alt text](image.png)
+
+
+
 # Algorithm
 In mathematics and computer science, an algorithm is a finite sequence of mathematically rigorous instructions,Algorithm is a step-by-step for solving a problem.
 Algorithms are used as specifications for performing calculations and data processing.
@@ -12,13 +25,7 @@ Date elements are arranged sequentially or lineart that which element is attache
 ### on-linear Data Structure :
 Date elements are not sequentially or lineart like trees and graphs.
 
-# What is Big O :
-Big o notation is mathmatical notation that describe the limiting behavior a function when the argument tends towards a particular value or infinity.
-1) o(1) ==> console.log(1).
-2) Log O(n) ==>half the date.
-3) o(n) ==> for(loop).
-4) o(n^2) ==> nest for.
-5) o(2^n )==> the recursive Fibonacci algorithm.
+
 <!-- Basic Date Structures -->
 # LinkList 
 it is a type of the data structure use for storing conection of data and it is liner. the data store in node each of has Or contain of a dad field with refrecnce (link) to the next node in the sequence;
