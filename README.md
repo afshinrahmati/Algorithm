@@ -2,15 +2,19 @@
 Big o notation is mathmatical notation that describe the limiting behavior a function when the argument tends towards a particular value or infinity.
 Big O روشی برای سنجش کارایی انجام یک الگوریتم است. هر چه Big O بیشتر باشد، کارایی الگوریتم مورد نظر، کمتر است.
 that is a idea for write Scable code
-1) o(1) ==>Constant the performance console.log(1).
+1) o(1) ==>Constant the performance console.log(1). a[0]
 2) Log O(n) ==> Logarithmic  half the date.
 3) o(n) ==> Linear for(loop). change with the 
 4) o(n^2) ==>Quadratic nest for.
 5) o(2^n )==>Exponential the recursive Fibonacci algorithm.
 ![alt text](image.png)
 
+for 100 ==> o(100)
 
 
+# Heap & Stack:
+1) heap usually where we store variables.
+2) stack is usually where we keep track of our function calls
 # Algorithm
 In mathematics and computer science, an algorithm is a finite sequence of mathematically rigorous instructions,Algorithm is a step-by-step for solving a problem.
 Algorithms are used as specifications for performing calculations and data processing.

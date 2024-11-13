@@ -1,0 +1,1 @@
+# give two array and if common items return true else false
