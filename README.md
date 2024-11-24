@@ -18,11 +18,27 @@ for 100 ==> o(100)
 # Algorithm
 In mathematics and computer science, an algorithm is a finite sequence of mathematically rigorous instructions,Algorithm is a step-by-step for solving a problem.
 Algorithms are used as specifications for performing calculations and data processing.
+* Sorting
+* Dynamic Progrmming
+* BFS + DFS (searching)
+* Recursion
 # DataStructure
+![alt text](./what_is_data_stru.png)
 A data structure is a specialized way of organizing, managing, and storing data in a computer so that it can be accessed and modified efficiently.
+AND if we want to Insertion OR Deletion OR SEARCHING, ,.... a date that store with DataStructure now we use the Algorithm.
 1) Efficiency: They help in optimizing operations like searching, insertion, deletion, sorting, etc., depending on the structure used.
 2) Data Management: They provide a way to manage large amounts of data efficiently, such as databases, file systems, and more.
 3) Algorithm Efficiency: Algorithms often rely on data structures to operate efficiently. For example, graph traversal algorithms require a graph data structure to represent relationships between objects.
+* Arrays
+* Stacks
+* Queues
+* Linked Lists
+* Trees
+* Tries
+* Graphs
+* Hash Tables
+
+![alt text](./Cheet.png)
 ## two broad categories:
 ### Linear Data Structure :
 Date elements are arranged sequentially or lineart that which element is attached to its previous and next adjacent elements Examples are array, stack, queue, etc.
@@ -61,6 +77,12 @@ just you can (you can only add/remove from one end);
 5) Build compilers(syntax checking)
 
 # ARRAY 
+if our data is step by step <one by one> is it good.
+const strings = ['a','b','c','d'] ==> // 4*4 = 16 bytes of storages
+* lookup(O(1))
+* Push(O(1)) && POP(O(1)) // just add at in end and no loop
+* Insert(O(n))
+* Delete(O(n))
 array is liner datastructer that can hold elements and arrange them and it uses  contiguous<contious> memory space to store elements and 
 in array we can directly access any element 
 
