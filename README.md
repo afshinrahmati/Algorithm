@@ -78,14 +78,21 @@ just you can (you can only add/remove from one end);
 
 # ARRAY 
 if our data is step by step <one by one> is it good.
-const strings = ['a','b','c','d'] ==> // 4*4 = 16 bytes of storages
-* lookup(O(1))
-* Push(O(1)) && POP(O(1)) // just add at in end and no loop
-* Insert(O(n))
-* Delete(O(n))
 array is liner datastructer that can hold elements and arrange them and it uses  contiguous<contious> memory space to store elements and 
 in array we can directly access any element 
 
+const strings = ['a','b','c','d'] ==> // 4*4 = 16 bytes of storages
+* lookup(O(1))
+* Push(O(1)) && POP(O(1)) // just add at in end and no loop
+* Insert(O(n)) Unshift(O(n)) // because add in first array
+* Delete(O(n))
+## static array
+that mean the lenght is identify
+<!-- C++ -->
+int a[20];
+int b[5] {1,2,3,4,5}
+## Dynamic array
+in js and python array is Dynamic and for manage memery is so hard
 # HASH-TABLE<HASH_MAP>
 hash tables are specialized data structure that alows fast access to data based on a key
 it works by using a hash function to compute an index(called hash code) in to an array that where the desired value can be store or found.
