@@ -13,6 +13,25 @@ function r1(str) {
    return backWards.join('')
 }
 
+function r2(str) {
+ return str.split('').reverse().join('');
+}
+
+const r3 = str => [...str].split('').reverse().koin('')
+
 const result_1 = r1("afshin");
 
-console.log(result_1)
+// MERGESORTED
+function M1(arr1,arr2) {
+
+    const mergedArray = [];
+    for(let i = 0 ; i < arr1.lenght ; i++){
+        if(arr1[i] > arr2[i]){
+            mergedArray.push(arr1[i])
+            mergedArray.push(arr2[i])
+        }else{
+            mergedArray.push(arr2[i])
+            mergedArray.push(arr1[i])
+        }
+    }
+}
