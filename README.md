@@ -94,6 +94,24 @@ int b[5] {1,2,3,4,5}
 ## Dynamic array
 in js and python array is Dynamic and for manage memery is so hard
 # HASH-TABLE<HASH_MAP>
+![alt text](./hash_table1.png)
 hash tables are specialized data structure that alows fast access to data based on a key
 it works by using a hash function to compute an index(called hash code) in to an array that where the desired value can be store or found.
-hash tables are very fast
+hash tables are very fast.
+* object is type of hash table
+* python is dectionray
+* java maps
+* ruby hashes
+### Hash Function
+A hash function is a mathematical algorithm that transforms an input (or "message") into a fixed-length output called a hash value or digest. The process involves applying a deterministic algorithm such that the same input always produces the same output. Hash functions are commonly used in various fields such as cryptography, data structures, and data integrity verification.
+### Hash Value
+A hash value (or hash code, digest) is the result of applying a hash function to input data. It is a compact representation of the data, often represented as a string of hexadecimal or binary digits.
+#### Popular Hash Functions
+MD5: Produces a 128-bit hash value (considered insecure for cryptography).
+SHA-1: Produces a 160-bit hash value (deprecated due to vulnerabilities).
+SHA-256: A widely-used cryptographically secure hash function.
+CRC32: Used for error-checking in data transmission.
+bcrypt: Used for securely hashing passwords with added salt.
+
+### MD5
+this hash for each string we have a hash same input
