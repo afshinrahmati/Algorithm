@@ -59,7 +59,7 @@ const strings = ['a','b','c','d'] ==> // 4*4 = 16 bytes of storages
 * Insert(O(n)) Unshift(O(n)) // because add in first array
 * Delete(O(n))
 - if we have douple array memory has bad performance
-- bad performance for insert abd delete
+- bad performance for insert OR delete
 - if we want to add in middle array we have to push are an elenemant to the end
 + it is good for searchin
 + it is good for caching for reading
@@ -158,15 +158,17 @@ A linked list provides flexibility in how data is stored and accessed compared t
 ```
 ### Drawbacks
 1) Memory Overhead : Each node in a linked list requires extra memory for the pointer(s)
-# Queues 
 
-it is similar to stack but from the firsts,they are a type of datastructure that their element held in a sequence till end. and the elements enqueued end of the  sequence and First in First out(FIFO).
-and it is good for priniting jobs and handleing request in web service , Peek (get the top element).
-operation in Enqueue (insert),Dequeue (remove) 
-# Stack
+
+4) # Stack
+* we can implement with array or linklist (array is good for cach and fast ,.....)
 Stack in Data Structures is a liner type abd follows the LIFO <last-in-first-out> that can insert or delete form top of the data.
 Implement Stack contiguous memory which is Array, or non-contiguous memory like linklist.
-push(),pop(),peek(),isEmpty();
+ it is look like dishes
+* lookup O(n)
+* pop O(1) remove last item
+* Push O(1)
+* peek O(1) show top value
 ### why is good ?
 Stack is simple but it is powerful and it used in computing because it can managed data  when you need to process elements in reverse order.
 just you can (you can only add/remove from one end);
@@ -175,3 +177,17 @@ just you can (you can only add/remove from one end);
 3) Reversing Data: They are useful when you need to reverse an order of elements. For example, reversing a word.
 4) Undo Mechanism: Many applications (like text editors) use stacks to implement undo features.
 5) Build compilers(syntax checking)
+6) what data it was save in last
+
+# Queues 
+* we can implement with array or linklist (array is good for cach and fast ,.....)
+* it is not good implement with array beacue when you rmeove from first all element should return back O(n) and link link list i good <head,Tail>
+it is similar to stack but from the firsts,they are a type of datastructure that their element held in a sequence till end. and the elements enqueued end of the  sequence and First in First out(FIFO).
+and it is good for priniting jobs and handleing request in web service , Peek (get the top element).
+operation in Enqueue (insert),Dequeue (remove) 
+* look O(n)
+* enqueue O(1)
+* dequeue O(1)
+* peek O(1)
+### why is good?
+1) it is look printer
