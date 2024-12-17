@@ -179,7 +179,7 @@ just you can (you can only add/remove from one end);
 5) Build compilers(syntax checking)
 6) what data it was save in last
 
-# Queues 
+5) # Queues 
 * we can implement with array or linklist (array is good for cach and fast ,.....)
 * it is not good implement with array beacue when you rmeove from first all element should return back O(n) and link link list i good <head,Tail>
 it is similar to stack but from the firsts,they are a type of datastructure that their element held in a sequence till end. and the elements enqueued end of the  sequence and First in First out(FIFO).
@@ -191,3 +191,17 @@ operation in Enqueue (insert),Dequeue (remove)
 * peek O(1)
 ### why is good?
 1) it is look printer
+
+6) # Tree
+![alt text](./tree.png)
+* linklist is typeically tree just with one path
+* A Tree data structure is a type of non-liner and it is hierarchical data strauctre that data consist of of node.
+* it follows the parent-child relationship and the top value called root.
+* each nodes in a tree can have child nodes Or each nodes just have single.
+* nodes with same parent called siblings.
+* Nodes without any children are referred to as leaves.
+* in tree, the simplification it provides in accessing, managing and manipulating data with complex relationships makes it a vital data structure in computer scienc.
+* it is good for fileSystem
+### Binary Tree
+![alt text](./binary-tree.png) // wront because it has 3 child 
+* each node at most two children left and right child. or ziro chilod
