@@ -202,6 +202,11 @@ operation in Enqueue (insert),Dequeue (remove)
 * Nodes without any children are referred to as leaves.
 * in tree, the simplification it provides in accessing, managing and manipulating data with complex relationships makes it a vital data structure in computer scienc.
 * it is good for fileSystem
-### Binary Tree
+## Binary Tree
 ![alt text](./binary-tree.png) // wront because it has 3 child 
 * each node at most two children left and right child. or ziro chilod
+### Binary Search Tree 
+* O(log N) ---> that mean we search just on half data not on all,dividing
+* 1) lookup ----> O(log N). beacue each time we half the data
+* 2) insert ---> O(log N).
+* 3) delete ---> O(log N)
