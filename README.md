@@ -206,7 +206,11 @@ operation in Enqueue (insert),Dequeue (remove)
 ![alt text](./binary-tree.png) // wront because it has 3 child 
 * each node at most two children left and right child. or ziro chilod
 ### Binary Search Tree 
+- No O(1) Operation
 * O(log N) ---> that mean we search just on half data not on all,dividing
 * 1) lookup ----> O(log N). beacue each time we half the data
 * 2) insert ---> O(log N).
 * 3) delete ---> O(log N)
++ Better than O(n)
++ Ordered
++ Flexible Size
