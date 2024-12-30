@@ -15,6 +15,18 @@ for 100 ==> o(100)
 # Heap & Stack:
 1) heap usually where we store variables.
 2) stack is usually where we keep track of our function calls
+* Primitive types (like numbers, booleans, etc.): 
+    + These are usually stored directly on the stack if they are local variables.
+    + Designed for dynamic memory allocation.
+    + Ideal for objects or structures that might change size or persist longer than the function's execution
+* Objects (like arrays, custom objects, or instances of classes):
+    + The actual object data is stored in the heap because objects can grow dynamically in size.
+    + A reference (or pointer) to the object is stored in the stack.
+    + Designed for fixed, short-term memory
+    + Efficient for storing references, local variables, and function calls.
+ 
+* Garbage Collection (GC) is primarily associated with managing memory in the heap<object>, not the stack --> dlete auto by system.    
+
 # Algorithm
 In mathematics and computer science, an algorithm is a finite sequence of mathematically rigorous instructions,Algorithm is a step-by-step for solving a problem.
 Algorithms are used as specifications for performing calculations and data processing.
@@ -33,13 +45,15 @@ AND if we want to Insertion OR Deletion OR SEARCHING, ,.... a date that store wi
 * Stacks
 * Queues
 * Linked Lists
-* Trees
-* Tries
-* Graphs
 * Hash Tables
+* Trees
+    * AVL Tree
+    * Red Black Tree
+    * Binary heaps
+    * Tries
+* Graphs
 
 ![alt text](./Cheet.png)
-## two broad categories:
 ### Linear Data Structure :
 Date elements are arranged sequentially or lineart that which element is attached to its previous and next adjacent elements Examples are array, stack, queue, etc.
 ### on-linear Data Structure :
@@ -205,8 +219,12 @@ operation in Enqueue (insert),Dequeue (remove)
 ## Binary Tree
 ![alt text](./binary-tree.png) // wront because it has 3 child 
 * each node at most two children left and right child. or ziro chilod
-### Binary Search Tree 
-- No O(1) Operation
+### Binary Search Tree (BST)
+* each nodes contains tow child and it orders by the less value are in right and the child more are in the left
+* The left subtree contains nodes with keys less than the parent node’s key.
+* The right subtree contains nodes with keys greater than the parent node’s key.
+* No duplicate nodes are allowed
+
 * O(log N) ---> that mean we search just on half data not on all,dividing
 * 1) lookup ----> O(log N). beacue each time we half the data
 * 2) insert ---> O(log N).
@@ -214,3 +232,92 @@ operation in Enqueue (insert),Dequeue (remove)
 + Better than O(n)
 + Ordered
 + Flexible Size
++ Searching for elements
+* Dynamic sets of elements.
+* databases and language parsing
+- No O(1) Operation
+- If not balanced, the tree can become skewed , leading to O(n) time complexity for some operations.(we can use AVL or Red-Black Or B-Tree)
+### AVL Tree
+* it is the self-balancing Binary search tree.
+* It ensures that the tree remains balanced to avoid the worst-case performance of a standard BST.
+* For any node, the height difference between its left and right subtrees (called the balance factor) must be at most 1.
+* Lookup, insert, and delete all have O(log n) time complexity.
++ Situations requiring fast lookups, such as in databases and memory management systems.
+- The balancing operations may introduce overhead during insertions and deletions compared to an unbalanced BST.
+### RED-Black Tree
+* A Red-Black Tree is another type of self-balancing Binary Search Tree that uses a color (red or black) for each node to ensure balance.
+* The root is always black.
+* A red node cannot have a red child (no two consecutive red nodes).
+* Every path from a node to its descendant null pointers has the same number of black nodes.
+* Balancing is maintained using rotations and color changes.
+* Lookup, insert, and delete operations are all O(log n).
+### Binary Heap
+* the parent all the time is bigger than the child
+* every node in the top level is the highet value so if we insert the number is big we have to switch it.
+* our root is 91 so we add 100 it goo down and it come up until it less than the a number.
+* Max-Heap: The key of each node is greater than or equal to the keys of its children.
+* Min-Heap: The key of each node is less than or equal to the keys of its children.
+* Insertion and deletion take O(log n), while the getMin() or getMax() operation takes O(1).
+* it is good for comparative operations
+* look up is O(N).
+* insert O(Log(N)).
+* delete O(Log(N)).
++ Priority queues
++ Heap Sort algorithm.
++ insert is very fast
+- Unlike BSTs, heaps do not support efficient searching of arbitrary elements (O(n) in worst case).
+### Priority queue
+* imagine you are in the queue and you are in the first but some people that are familler with givermant come and they are in front of you so to this class called
+# Tries
+![alt text](./Trie.png)
+* these has 3 three cgild
+* it is good for dictionary
+* store and retrieve strings
+* Each node in a Trie represents a character.
+``
+ (root)
+       /  |  \
+      c   ... 
+     / \
+    a   ...
+   / \
+  t   r
+  |    \
+(end)   t
+         |
+       (end)
+Words stored in the Trie:
+cat
+car
+cart       
+``
+### B-Trees
+* commonly used in systems where read and write operations are performed on disk.
+* it is good for operation I/O because can save all of the structure.
+* the internal nodes can store more than one key.
+*  if a node contains the values [10,20,30] it has four children: the first contains values less than 10, the second contains values between 10 and 20, the third contains values between 20 and 30, and the fourth contains values greater than 30.
+A B-Tree is a self-balancing search tree designed to maintain sorted data and allow for efficient insertion, deletion, and search operations. It's widely used in databases and file systems because it minimizes disk I/O operations by keeping its structure balanced.
+# Graph
+![alt text](./graph.png)
+![alt text](./graph2.png)
+![alt text](./graph3.png)
+* hash tables , arrays , trees , linklist are all part of graphs simply uses
+* tree type of the graph
+* each node called (Vertex) and node connect with (Edge).
+* it is good for relationship data.
+* ususaly use for network or google map for relation the road path
+## type of Graph
+1) Directed:
+![alt text](./directed_Weight.png)
+![alt text](./directed_unweight.png)
+* Directed . In a directed graph, all the edges are unidirectional 
+* they only go one way.
+* in twitter i can follow a person but an other can or can not follow
+2) Undirected:
+![alt text](./undirected_weight.png)
+* i can follow and unfollow
+
+* Weighted <Cyclic‍‍‍‍> : for each  edge is assigned a weight or cost like form tehran till mahshad the distance is 800K
+* Unweighted <ACyclic> :graphs don’t have these extra edge information
+
+![alt text](./weighted-graph.png)
