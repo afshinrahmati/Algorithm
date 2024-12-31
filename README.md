@@ -1,4 +1,4 @@
-# What is Big O :
+# ⭐ What is Big O ⭐ :
 Big o notation is mathmatical notation that describe the limiting behavior a function when the argument tends towards a particular value or infinity.
 Big O روشی برای سنجش کارایی انجام یک الگوریتم است. هر چه Big O بیشتر باشد، کارایی الگوریتم مورد نظر، کمتر است.
 that is a idea for write Scable code
@@ -12,7 +12,7 @@ that is a idea for write Scable code
 for 100 ==> o(100)
 
 
-# Heap & Stack:
+# ⭐ Heap & Stack ⭐:
 1) heap usually where we store variables.
 2) stack is usually where we keep track of our function calls
 * Primitive types (like numbers, booleans, etc.): 
@@ -27,14 +27,8 @@ for 100 ==> o(100)
  
 * Garbage Collection (GC) is primarily associated with managing memory in the heap<object>, not the stack --> dlete auto by system.    
 
-# Algorithm
-In mathematics and computer science, an algorithm is a finite sequence of mathematically rigorous instructions,Algorithm is a step-by-step for solving a problem.
-Algorithms are used as specifications for performing calculations and data processing.
-* Sorting
-* Dynamic Progrmming
-* BFS + DFS (searching)
-* Recursion
-# DataStructure
+
+# ⭐ DataStructure ⭐
 ![alt text](./what_is_data_stru.png)
 A data structure is a specialized way of organizing, managing, and storing data in a computer so that it can be accessed and modified efficiently.
 AND if we want to Insertion OR Deletion OR SEARCHING, ,.... a date that store with DataStructure now we use the Algorithm.
@@ -274,7 +268,7 @@ operation in Enqueue (insert),Dequeue (remove)
 * it is good for dictionary
 * store and retrieve strings
 * Each node in a Trie represents a character.
-``
+```
  (root)
        /  |  \
       c   ... 
@@ -290,7 +284,7 @@ Words stored in the Trie:
 cat
 car
 cart       
-``
+```
 ### B-Trees
 * commonly used in systems where read and write operations are performed on disk.
 * it is good for operation I/O because can save all of the structure.
@@ -321,3 +315,48 @@ A B-Tree is a self-balancing search tree designed to maintain sorted data and al
 * Unweighted <ACyclic> :graphs don’t have these extra edge information
 
 ![alt text](./weighted-graph.png)
+
+
+
+# ⭐ Algorithm ⭐
+In mathematics and computer science, an algorithm is a finite sequence of mathematically rigorous instructions,Algorithm is a step-by-step for solving a problem.
+Algorithms are used as specifications for performing calculations and data processing.
+* Sorting
+* Dynamic Progrmming
+* BFS + DFS (searching)
+* Recursion
+
+1) ## Recursion <Recursive> 
+* it is useful when it is tree.
+* Recursion is technique used in computer science to solve big problems by breaking them into smaller.
+* The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function. 
+```
+    function factoria(n) { O(n)
+        if( n == 2 || n == 1) {
+            return n
+        }
+        retutn n * factoria(n-1)
+    }
+
+   #// 0,1,1,2,3,5,8,13,21,34,55,89,144 ...
+    function fibonacci(n) {
+        if(n<2) {
+            return n
+        }
+
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+    fibonacci(7)
+```
+## why use it and no iteratively (loop) :
+* more code readable.
+* loop large Stack
+* Recursionis very useful for tree
+### call stack over flow
+* you are a lots of function should be have and system will be crazy to handle them and it full and dirty system.
+```
+function test() {
+    test()
+}
+// error max call stack over flow
+```
