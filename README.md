@@ -327,7 +327,8 @@ Algorithms are used as specifications for performing calculations and data proce
 * Recursion
 
 1) ## Recursion <Recursive> 
-* it is useful when it is tree.
+* it is useful when it is tree or converting something into a tree.
+* it is good for we do not get call stack over flow
 * Recursion is technique used in computer science to solve big problems by breaking them into smaller.
 * The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function. 
 ```
@@ -359,4 +360,54 @@ function test() {
     test()
 }
 // error max call stack over flow
+```
+2) ## Sort
+![alt text](./sorting.png)
+* [toptal.com](https://www.toptal.com/developers/sorting-algorithms)
+* A sorting algorithm. In computing, algorithms are needed to design computer programs
+* Bubble sort , Insertion sort, Selection Sort , Merge Sort.
+## Bubble sort
+* two by two check and go head and loop each time 
+* O(n) , O(n^2)
+
+```
+const a = [1,6,8,7,9,5];
+for(let i = 0 ; i < a.length ; i++) {
+   for(let j = 0 ; j < a.length ; j++) {
+     const x = a[j];
+        const y = a[j+1];
+    if(x > y) {
+        a[j] =y;
+        a[j+1] = x  
+    }
+   }
+}
+```
+## Selection Sort
+* select the smalest number and put on one and ...
+```
+const a = [1,6,8,7,9,5];
+for(let i = 0 ; i < a.length ; i++) {
+    let min = i;
+    let temp = a[i]
+   for(let j = 0 ; j < a.length ; j++) {
+        if(a[j] < a[min]>) {
+            min = j;
+        }
+   }
+   a[i] = a[min];
+   a[min] = temp;
+}
+```
+
+## Insertions Sort 
+* inset the value in a good place  9,7,3,6 ==> 7 come in first then  3 come in first and 6 
+
+```
+const a = [1,6,8,7,9,5];
+for(let i = 0 ; i < a.ength ; i++>) {
+    if(a[i] < a[0]>) {
+        
+    }
+}  
 ```
