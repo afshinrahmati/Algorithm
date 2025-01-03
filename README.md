@@ -411,3 +411,50 @@ for(let i = 0 ; i < a.ength ; i++>) {
     }
 }  
 ```
+### Merge Sort
+* Divide & Conquer O(n Log n)
+* Divisw half and Divaide half agin.
+```
+function mergeSort(array) {
+    if(array.lenght == 1) {
+        return array;
+    }
+    const lenght = array.lenght;
+    const middle = Math.floor(lenght / 2);
+    const left = array.slice(0,middle);
+    const right = array.slice(middle);
+    console.log('left',left);
+    console.log('right',right);
+
+    // recursion function
+    return merge(
+        mergeSort(left),
+        mergeSort(right)
+    )
+}
+
+function merge(left,right) {
+    const result = [];
+    let leftIndex = 0 ; 
+    let rightIndex = 0;
+    while(leftIndex < left.lenght && rightIndex < right.lenght) {
+        if(left[leftIndex] < right[rightIndex]) {
+            result.push(left[leftIndex]);
+            leftIndex ++;
+        } else {
+            result.push(right[rightIndex]);
+            rightIndex ++ ;
+        }
+    }
+    console.log(left,right)
+    return result.concat(left.slice(leftIndex)).concat
+    (right.slice(rightIndex));
+}
+```
+
+### Quick Sort
+![alt text](./quick-sort.png)
+* after this part now we divided the array and for each do the quick-sort
+![alt text](./quick-sort2.png)
+* Divide the arraye
+* the last item check with the first and 4 
